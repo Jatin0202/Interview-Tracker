@@ -1,0 +1,27 @@
+<% if(typeof errors!= 'undefined') { %>
+    <% if(errors.name!= '') { %>
+        <div class="alert alert-warning alert-dismissable fade show" role="alert">
+            <%= errors.name %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <% } %> 
+    <% if(errors.email!= '') { %>
+        <div class="alert alert-warning alert-dismissable fade show" role="alert">
+            <%= errors.email %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <% } %> 
+    <% if(errors.password!= '') { %>
+        <div class="alert alert-warning alert-dismissable fade show" role="alert">
+            <%= errors.password %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <% } %> 
+<% } %>
+
