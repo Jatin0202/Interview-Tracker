@@ -1,0 +1,9 @@
+<%- include('partials/header'); -%>
+
+<% programmingSections.forEach(function(programmingSection) { %>
+    <div class="row mt-5">
+        <h1><a href="/programming/<%= programmingSection.name %>"> <%= programmingSection.name %></a></h1>	
+    </div>
+<% }); %>
+
+<%- include('partials/footer'); -%>

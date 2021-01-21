@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%>
+
+
+<% companies.forEach(function(company) { %>
+    <div class="row mt-5">
+        <h1><a href="/interview_experience/<%= company.name %> "> <%= company.name %></a></h1>	
+    </div>
+<% }); %>
+
+
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body text-center">
+        <h1><a href="/your_experience "> Share your experience</a></h1>
+    </div>	
+</div>
+
+<%- include('partials/footer'); -%>

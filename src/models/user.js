@@ -1,7 +1,7 @@
 const mongoose= require('mongoose');
 const validator= require('validator');
 const bcrypt= require('bcrypt');
-const { use } = require('../routers/authRouters');
+const { user } = require('../routers/authRouters');
 
 const userSchema= new mongoose.Schema({
     name: {
